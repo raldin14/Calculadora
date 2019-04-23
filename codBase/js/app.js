@@ -1,4 +1,4 @@
-var btnOn = document.getElementById('on');
+/*var btnOn = document.getElementById('on');
 var btnSign = document.getElementById('sign');
 var btnRaiz = document.getElementById('raiz');
 var btnDiv = document.getElementById('dividido');
@@ -16,9 +16,17 @@ var btn3 = document.getElementById('3');
 var btn0 = document.getElementById('0');
 var btnPunto = document.getElementById('punto');
 var btnIgual = document.getElementById('igual');
-var btnMas = document.getElementById('mas');
-
-var calculadora = {
-   
-
+var btnMas = document.getElementById('mas');*/
+var botones = document.querySelectorAll('.teclado img');
+for(var i = 0; i < botones.length; i++){
+    botones[i].onclick = function(e){
+        var display = document.querySelector('#display');
+        
+        if(e.target.id == 8){
+            display.innerHTML = 8;
+        }
+    }
+}
+var calculadora = function() {
+    
 }
